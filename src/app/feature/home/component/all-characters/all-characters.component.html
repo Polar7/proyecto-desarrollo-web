@@ -1,0 +1,22 @@
+<p>all-characters works!</p>
+<p>{{nombreX}}</p>
+<!--<p>{{listCharacters}}</p>-->
+<div class="card-container">
+@for (actual of listCharacters; track actual.id) {
+  <div class="card" style="width: 18rem;">
+    <img src="{{actual.image}}" class="card-img-top" alt="image-chracter">
+    <div class="card-body">
+      <h5 class="card-title">{{actual.name}}</h5>
+      <p class="card-text">Casa a la cual pertenece: {{actual.house}}</p>
+      <p class="card-text">Material de su varita: {{actual.wand.core}}</p>
+      @if (actual.alive) {
+        <button type="button" class="btn btn-success">Vivo</button>
+      } @else {
+        <button type="button" class="btn btn-danger">Muerto</button>
+      }
+      <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    </div>
+  </div>
+}
+</div>
+
