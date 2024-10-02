@@ -18,4 +18,8 @@ export class HarryPotterApiService {
     return this.http.get<CharacterDto[]>(`${this.baseUrl}/characters`);
   }
 
+  public getCharacterById(id: string): Observable<CharacterDto[]> {
+    return this.http.get<CharacterDto[]>(`${this.baseUrl}/character/${id}`);
+  }
+
 }

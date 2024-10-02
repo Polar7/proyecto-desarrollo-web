@@ -7,13 +7,15 @@ import { NewsExampleComponent } from './feature/news/news-example/news-example.c
 import { PruebaComponent } from './feature/news/prueba/prueba.component';
 import { AllCharactersComponent } from './feature/home/component/all-characters/all-characters.component';
 import {HttpClientModule} from "@angular/common/http";
+import { SpecificCharacterComponent } from './feature/home/component/specific-character/specific-character.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsExampleComponent,
     PruebaComponent,
-    AllCharactersComponent
+    AllCharactersComponent,
+    SpecificCharacterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,19 @@
+<p>specific-character works!</p>
+<p>{{objectCharacter.name}}</p>
+<div class="card" style="width: 18rem;">
+  <img src="{{objectCharacter.image}}" class="card-img-top" alt="image-chracter">
+  <div class="card-body">
+    <h5 class="card-title">{{objectCharacter.name}}</h5>
+    <p class="card-text">Casa a la cual pertenece: {{objectCharacter.house}}</p>
+    <p class="card-text">Material de su varita: {{objectCharacter.wand.core}}</p>
+    <p class="card-text">Fecha de nacimiento: {{objectCharacter.dateOfBirth}}</p>
+    <p class="card-text">Forma de patronus: {{objectCharacter.patronus}}</p>
+    @if (objectCharacter.alive) {
+      <button type="button" class="btn btn-success">Vivo</button>
+    } @else {
+      <button type="button" class="btn btn-danger">Muerto</button>
+    }
+    <button type="button" class="btn btn-warning" (click)="redirectAllCharacter()">Volver a todos los personajes</button>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+  </div>
+</div>

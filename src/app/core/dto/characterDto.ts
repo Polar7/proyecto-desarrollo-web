@@ -9,7 +9,8 @@ export interface CharacterDto {
   wand: WandDto,
   alive: boolean,
   image: string,
-  name: string;
+  name: string,
+  patronus: string;
 }
 
 /**
