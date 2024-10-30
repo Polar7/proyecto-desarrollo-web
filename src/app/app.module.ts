@@ -8,6 +8,8 @@ import { PruebaComponent } from './feature/news/prueba/prueba.component';
 import { AllCharactersComponent } from './feature/home/component/all-characters/all-characters.component';
 import {HttpClientModule} from "@angular/common/http";
 import { SpecificCharacterComponent } from './feature/home/component/specific-character/specific-character.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import { RegisterFormComponent } from './feature/auth/register-form/register-form.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { SpecificCharacterComponent } from './feature/home/component/specific-ch
     NewsExampleComponent,
     PruebaComponent,
     AllCharactersComponent,
-    SpecificCharacterComponent
+    SpecificCharacterComponent,
+    RegisterFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
