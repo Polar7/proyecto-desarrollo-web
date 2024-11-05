@@ -19,7 +19,7 @@ export class RegisterFormComponent extends AppBaseComponent {
       firstName: ['', [Validators.required]],
       lastName: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.pattern("^[A-Za-z0-9._%+-]+@cun\.edu\.co$")]],
-      cellphone: ['', [Validators.required]],
+      cellphone: ['', [Validators.required, Validators.maxLength(10)]],
       password: ['', [Validators.required]],
       repeatPassword:  ['', [Validators.required]]
     });
@@ -47,7 +47,7 @@ export class RegisterFormComponent extends AppBaseComponent {
     const required: Array<String> = ["firstName", "lastName", "email", "cellphone", "password", "repeatPassword"];
     const formatEmail: Array<String> = ["email"]
 
-    const onlyNumber: Array<String> = ["numberCellphone"]
+    const maxLength: Array<String> = ["numberCellphone"]
 
     if (this.isTouchedField(this.registerForm, field)) {
 
@@ -55,7 +55,7 @@ export class RegisterFormComponent extends AppBaseComponent {
         message = ErrorsForm.REQUIRED;
       } else if (formatEmail.includes(field) && this.registerForm.get(field).hasError('pattern')) {
         message = ErrorsForm.EMAIL_FORMAT;
-      } else if (onlyNumber.includes(field) && this.registerForm.get(field).hasError('max')) {
+      } else if (maxLength.includes(field) && this.registerForm.get(field).hasError('maxlength')) {
         message = "Solo puede tener maximo 10 caracteres"
       }
     }
