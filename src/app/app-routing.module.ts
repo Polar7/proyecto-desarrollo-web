@@ -4,6 +4,7 @@ import {NewsExampleComponent} from "./feature/news/news-example/news-example.com
 import {AllCharactersComponent} from "./feature/home/component/all-characters/all-characters.component";
 import {SpecificCharacterComponent} from "./feature/home/component/specific-character/specific-character.component";
 import {RegisterFormComponent} from "./feature/auth/register-form/register-form.component";
+import {CinemarkFormComponent} from "./feature/cinemark/cinemark-form/cinemark-form.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: "register-form",
     component: RegisterFormComponent,
+  },
+  {
+    path: "cinemark",
+    component: CinemarkFormComponent,
   },
 ];
 

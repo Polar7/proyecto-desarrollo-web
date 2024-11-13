@@ -10,6 +10,9 @@ import {HttpClientModule} from "@angular/common/http";
 import { SpecificCharacterComponent } from './feature/home/component/specific-character/specific-character.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import { RegisterFormComponent } from './feature/auth/register-form/register-form.component';
+import { CinemarkFormComponent } from './feature/cinemark/cinemark-form/cinemark-form.component';
+import { PaymentFormComponent } from './feature/cinemark/payment-form/payment-form.component';
+import { BasicDataFormComponent } from './feature/cinemark/basic-data-form/basic-data-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { RegisterFormComponent } from './feature/auth/register-form/register-for
     PruebaComponent,
     AllCharactersComponent,
     SpecificCharacterComponent,
-    RegisterFormComponent
+    RegisterFormComponent,
+    CinemarkFormComponent,
+    PaymentFormComponent,
+    BasicDataFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,100 @@
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <style>
+    .cascading-right {
+      margin-right: -50px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+
+  <!-- Jumbotron -->
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <form role="form" [formGroup]="basicDataForm">
+
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example4">Tipo de persona</label>
+                <input formControlName="typePerson"
+                       type="text" id="form3Example4" class="form-control"
+                       placeholder="Tipo de persona"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example5">Nombre</label>
+                <input formControlName="name"
+                       type="text" id="form3Example5" class="form-control"
+                       placeholder="Nombre de la persona"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example6">Apellido</label>
+                <input formControlName="lastname"
+                       type="text" id="form3Example6" class="form-control"
+                       placeholder="Nombre de la persona"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example7">Tipo de documento</label>
+                <input formControlName="typeDocument"
+                       type="text" id="form3Example7" class="form-control"
+                       placeholder="Tipo de documento"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example8">Numero de identificacion</label>
+                <input formControlName="idDocument"
+                       type="text" id="form3Example8" class="form-control"
+                       placeholder="Numero de documento"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example9">Ciudad</label>
+                <input formControlName="city"
+                       type="text" id="form3Example9" class="form-control"
+                       placeholder="Ciudad"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example10">Direccion</label>
+                <input formControlName="address"
+                       type="text" id="form3Example10" class="form-control"
+                       placeholder="Direccion"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example11">Numero de telefono</label>
+                <input formControlName="phone"
+                       type="text" id="form3Example11" class="form-control"
+                       placeholder="Numero"/>
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="form3Example12">Correo electronico</label>
+                <input formControlName="email"
+                       type="text" id="form3Example12" class="form-control"
+                       placeholder="Correo"/>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
